@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Internet Website 2001
+    //- BS4 grid
+    link(rel="stylesheet" href="../css/grid.css")
+    //- project styles
+    link(rel="stylesheet" href="styles/main.css")
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+
+    script.
+      $(document).ready(function(){
+        // do a bunch of 2009 things here
+      });
+  body
+    h1 Regular Container (snappy)
+    
+    .container
+      .row.no-gutters
+        .col-4 
+          p Column
+        .col-4 
+          p Column
+        .col-4 
+          p Column
+
+    h1 Edge to edge:
+
+    .row.no-gutters
+      .col-4 
+        p Column
+      .col-4 
+        p Column
+      .col-4 
+        p Column

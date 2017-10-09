@@ -13,6 +13,7 @@ build:
 	lessc ./less/main.less ./dist/styles/main.css
 
 	# move static assets
+	cp -r ./css ./dist
 	# cp -r ./src/fonts ./dist
 	# cp -r ./src/img ./dist
 	# cp -r ./src/js ./dist
@@ -27,4 +28,4 @@ dev: build
 		python -m SimpleHTTPServer 8055
 
 watch:
-	watch -n 5 make -B
+	watch -n 2 make -B
